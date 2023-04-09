@@ -6,6 +6,7 @@ import SingleProduct from '../SingleProduct/SingleProduct';
 import Error from '../Error/Error';
 import Loader from '../Loader/Loader';
 import {STATUS} from "../../utils/status";
+import ProductApi from '../Error/ProductApi';
 
 const SingleCategory = ({products, status}) => {
     const dispatch = useDispatch();
@@ -30,10 +31,10 @@ const SingleCategory = ({products, status}) => {
                     </div>
                     <div className='product-items grid'>
                         {
-                            products.map(product => (
+                            products.slice(0,7).map((product,index) => (
                                 <div className='product-item bg-white hoverImg' key = {product.id} onClick = {() => viewModalHandler(product)}>
                                     <div className='product-item-img '>
-                                        <img src = {product.images[0]} alt = ""  className='pd-img'/>
+                                    <ProductApi  name={product.category.name} index={index}/>
                                         <div className = "product-item-cat text-white fs-13 text-uppercase bg-gold fw-6">{product.category.name}</div>
                                     </div>
                                     <div className='product-item-body'>

@@ -45,12 +45,12 @@ const CartPage = () => {
                                 <div className = "cart-items grid">
                                     {
                                         cartProducts.map(cartProduct => (
-                                            <div className='cart-item grid' key = {cartProduct.id}>
-                                                <div className='cart-item-img flex flex-column bg-white'>
-                                                    <img src = {cartProduct.images[0]} alt = {cartProduct.title} />
+                                            <div className='cart-item' key = {cartProduct.id}>
+                                                <div className='flex flex-column '>
+                                                    {/* <img src = {cartProduct.images[0]} alt = {cartProduct.title} />
                                                     <button type = "button" className='btn-square rmv-from-cart-btn' onClick={() => dispatch(removeFromCart(cartProduct.id))}>
                                                         <span className='btn-square-icon'><i className='fas fa-trash'></i></span>
-                                                    </button>
+                                                    </button> */}
                                                 </div>
 
                                                 <div className='cart-item-info'>

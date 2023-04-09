@@ -40,6 +40,7 @@
 
     .pd-img{
         border-radius: 10px;
+        height: 250px;
     }
     @media screen and (min-width: 576px){
         grid-template-columns: repeat(2, 1fr);
@@ -53,7 +54,7 @@
 
     @media screen and (min-width: 992px){
         grid-template-columns: repeat(3, 1fr);
-            column-gap: 40px;
+            // column-gap: 40px;
     }
 
     @media screen and (min-width: 1200px){

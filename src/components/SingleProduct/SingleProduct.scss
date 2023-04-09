@@ -17,7 +17,7 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 4px;
     padding: 36px 24px;
-    width: 90%;
+    width: 50%;
     max-width: 920px;
 
     .modal-close-btn{
@@ -36,8 +36,8 @@
     }
 
     .details-content{
-        overflow-y: scroll;
-        row-gap: 32px;
+        overflow-y: hidden;
+        // row-gap: 32px;
         height: 70vh;
         .details-right{
             .details-img{
@@ -82,8 +82,8 @@
         }
 
         @media screen and (min-width: 800px){
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 40px;
+            // grid-template-columns: repeat(2, 1fr);
+            // column-gap: 40px;
             height: auto;
         }
     }
